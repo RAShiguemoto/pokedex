@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana;
+    background: linear-gradient(90deg, rgba(255,94,94,1) 0%, rgba(255,70,70,1) 84%, rgba(255,68,68,1) 100%);
+}
+
+.container {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: auto;
+}
+
+.card {
+    margin-top: 20px;
+    margin-left: 1%;
+    width: 24%;
+    height: 350px;
+    float: left;
+    border-radius: 5%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(168,168,170,1) 0%, rgba(119,119,119,1) 0%, rgba(23,23,23,1) 100%);
+}
+
+.card:hover {
+    box-shadow: 3px 3px white;
+}
+
+h1 {
+    color: #5a5a5a;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.card:hover h1 {
+    color: white;
+    transition-duration: 1.5s;
+}
+
+h2 {
+    color: #5a5a5a;
+    font-size: 18px;
+}
+
+.card:hover h2 {
+    color: white;
+    transition-duration: 1.5s;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    opacity: 0.3;
+}
+
+.card:hover .image {
+    opacity: 1;
+    transition-duration: 1.5s;
+}
+
+.pokeball {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    opacity: 0.1;
+}
+
+.card:hover .pokeball {
+    opacity: 1;
+    transition-duration: 1.5s;
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        margin-top: 20px;
+        margin-left: 1%;
+        width: 49%;
+        height: 350px;
+        float: left;
+        border-radius: 5%;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(168,168,170,1) 0%, rgba(119,119,119,1) 0%, rgba(23,23,23,1) 100%);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+        border-radius: 5%;
+        text-align: center;
+        background: linear-gradient(180deg, rgba(168,168,170,1) 0%, rgba(119,119,119,1) 0%, rgba(23,23,23,1) 100%);
+    }
+
+    .pokeball {
+        opacity: 1;
+    }
+
+    .image {
+        opacity: 1;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    h2 {
+        color: white;
+    }
+}
+
